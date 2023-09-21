@@ -5,6 +5,7 @@ import { PlayerHeaderComponent } from './player-header/player-header.component';
 import { SongImageComponent } from './song-image/song-image.component';
 import { PlayerActionsComponent } from './player-actions/player-actions.component';
 import { SongListComponent } from './song-list/song-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -12,6 +13,7 @@ import { SongListComponent } from './song-list/song-list.component';
   declarations: [PlayerComponent, PlayerHeaderComponent, SongImageComponent, PlayerActionsComponent, SongListComponent],
   imports: [
     CommonModule,
+    NgbModule
   ],
   exports:[
     PlayerComponent

@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlayerModule } from './player/player.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PlayerModule } from './player/player.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PlayerModule
+    PlayerModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

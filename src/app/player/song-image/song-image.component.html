@@ -1,1 +1,11 @@
-<p>song-image works!</p>
+
+
+<div class="d-flex justify-content-center">
+    <img style="width: 25%;"  [src]="(album$ | async)?.currentSong?.image" [alt]="(album$ | async)?.currentSong?.song" />
+</div>
+<div >
+    <p class="text-center">
+        {{(album$ | async)?.currentSong?.artist}}
+    </p>
+</div>
+
